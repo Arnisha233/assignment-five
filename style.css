@@ -1,0 +1,9 @@
+
+ li{
+    display: flex;
+    gap: 50px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    list-style: numeric;
+}
