@@ -60,6 +60,7 @@
 
     
     let count = 0;
+    let seat = 0;
 
     for(const btn of allBtn){
         btn.addEventListener("click", function(e){
@@ -71,15 +72,16 @@
           
 
           const ticketName = e.target.innerText;
-          console.log(ticketName)
+      
+          
+        
+          if(btn < 4){
 
-    
-            if(ticketName > 4){
-              alert('dipa')
-            }else{
+          }else if(btn >= 4){
+            alert('mohadeb')
+          }
 
-            }
-             
+
 
 
             // 8 seat work 
@@ -169,10 +171,10 @@
 
         document.getElementById("grand-total").innerText = convertedGrandTotalCost + 550;
 
+      
 
 
-        
-  
+
     
 
          document.getElementById("cart-count").innerText = count;
@@ -187,3 +189,33 @@
       const section = document.getElementById("pop-pup");
     section.classList.remove("hidden");
   }
+
+
+
+  // function apply(){
+    
+  //   const count = document.getElementById("dipa");
+  //   // count.classList.add("hidden");
+  // }
+
+
+
+  const couponBtn = document.getElementById("dipa");
+    couponBtn.addEventListener("click", function(){
+      couponBtn.classList.add("hidden")
+
+
+      const input = document.getElementById("inpup-field").value;
+      console.log(input)
+
+      if(input === "NEW15"){
+
+      }else if(input === "Couple 20"){
+
+      }else{
+        alert("invalid coupon code")
+      }
+    })
+  
+  
+  
