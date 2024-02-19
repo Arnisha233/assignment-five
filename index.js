@@ -71,7 +71,15 @@
           
 
           const ticketName = e.target.innerText;
-           
+          console.log(ticketName)
+
+    
+            if(ticketName > 4){
+              alert('dipa')
+            }else{
+
+            }
+             
 
 
             // 8 seat work 
@@ -137,7 +145,7 @@
         // const total = convertNumber.innerText
         // parseFloat(total)
         
-           
+          // total section  
 
 
         const totalCost = document.getElementById("total").innerText;
@@ -164,17 +172,18 @@
 
 
         
-        const nextButton = document.getElementById("next").innerText;
-        
-        const section = document.getElementById("pop-pup");
-        section.classList.remove("hidden");
-
-
-
-
+  
+    
 
          document.getElementById("cart-count").innerText = count;
 
 
         })
     }
+
+    
+    
+    function btnName(){
+      const section = document.getElementById("pop-pup");
+    section.classList.remove("hidden");
+  }

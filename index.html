@@ -55,8 +55,8 @@
                   </ul>
                 </div>
                 <div class="navbar-end space-x-6">
-                <button class="btn btn-secondary border-[#1dd10066] text-[#1DD100] bg-[#1dd1001a] 
-                    rounded-lg text-base">Bus <span><img src="images/bus.svg" alt=""></span></button>
+                <a href=""><button class="btn btn-secondary border-[#1dd10066] text-[#1DD100] bg-[#1dd1001a] 
+                rounded-lg text-base">Bus <span><img src="images/bus.svg" alt=""></span></button></a>
                   
                 </div>
               </div>
@@ -86,7 +86,7 @@
                         <p class="font-500 text-[18px] text-[#000s]">use by January 2024</p>
                     </div>
                     <div class="p-[50px] w-[50%]">
-                        <h2 class="text-3xl font-700 text-[#000]">NEW15</h2>
+                        <h2 class="text-3xl font-700 text-[#000] mb-2">NEW15</h2>
                         <p class="text-xl font-500">Coupon Code</p>
                         </div>
                 </div>
@@ -97,14 +97,14 @@
                         <p class="font-500 text-[18px] text-[#000s]">use by January 2024</p>
                     </div>
                     <div class="p-[50px] w-[50%]">
-                        <h2 class="text-3xl font-700 text-[#000]">Couple 20</h2>
+                        <h2 class="text-3xl font-700 text-[#000] mb-2">Couple 20</h2>
                         <p class="text-xl font-500">Coupon Code</p>
                         </div>
                 </div>
             </div>
                 <div class="w-full text-center">
-                <button class="btn btn-secondary border-[#1dd10066] text-[#1DD100] bg-[#1dd1001a] 
-                rounded-lg text-base mx-auto mt-12 ">See All Offers</button>
+                <a href=""><button class="btn btn-secondary border-[#1dd10066] text-[#1DD100] bg-[#1dd1001a] 
+                    rounded-lg text-base mx-auto mt-12 ">See All Offers</button></a>
                 </div>
     
            
@@ -128,8 +128,8 @@
                         </div>
                     </div>
                     <div class="mx-auto mr-3">
-                        <button class="btn btn-secondary border-[#1dd10066] text-[#1DD100] bg-[#1dd1001a] 
-                rounded-lg text-base"><span><img src="images/tabler-icon-armchair.svg" alt=""></span><span id="green-sofa">8</span>Seats left</button>
+                        <a href=""><button class="btn btn-secondary border-[#1dd10066] text-[#1DD100] bg-[#1dd1001a] 
+                rounded-lg text-base"><span><img src="images/tabler-icon-armchair.svg" alt=""></span><span id="green-sofa">8</span>Seats left</button></a>
                     </div>
                 </div>
 
@@ -147,13 +147,13 @@
                     </div>
 
                     <div class="flex">
-                        <button class="btn btn-secondary text-[#03070CCC] bg-[#03070C0D] 
-                rounded-lg text-base mt-12 mr-28">Boarding Point</button>
-                <button class="btn btn-secondary text-[#03070CCC] bg-[#03070C0D] 
-                rounded-lg text-base mt-12 mr-28">Boarding Point</button>
+                        <a href=""><button class="btn btn-secondary text-[#03070CCC] bg-[#03070C0D] 
+                            rounded-lg text-base mt-12 mr-28">Boarding</button></a>
+                <a href=""><button class="btn btn-secondary text-[#03070CCC] bg-[#03070C0D] 
+                    rounded-lg text-base mt-12 mr-28">Boarding</button></a>
 
-                <button class="btn btn-secondary text-[#03070CCC] bg-[#03070C0D] 
-                rounded-lg text-base mt-12 mr-28">Boarding Point</button>
+                <a href=""><button class="btn btn-secondary text-[#03070CCC] bg-[#03070C0D] 
+                    rounded-lg text-base mt-12 mr-28">Boarding</button></a>
 
                 
                     </div>
@@ -247,7 +247,7 @@
 
                     <div class="flex justify-between my-8">
                         <input class="outline-none" type="text bg-[#FFF]" placeholder="Have any copupon?">
-                        <button class="btn btn-outline text-white bg-[#1DD100] rounded-lg">Apply</button>
+                        <button class="btn-outline text-white bg-[#1DD100] rounded-lg px-4 py-2">Apply</button>
                     </div>
 
                     <div class="flex justify-between mb-5">
@@ -255,11 +255,23 @@
                         <h2 id="grand-total">0</h2>
                     </div>
 
-                    <label for="">Passenger Name*</label><br>
-                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs bg-[red]" />
+                    <!--- input section start -->
+                    <div>
+
+                        <label for="">Passenger Name*</label><br><br>
+                        <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" /><br><br>
+
+                        <label for="">Phone Number*</label><br><br>
+                        <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" /><br><br>
 
 
-                    <button id="next" class="btn btn-wide bg-[#1DD100] rounded-[16px] w-full">Next</button>
+                    <label for="">Email ID</label><br><br>
+                    <input type="text" placeholder="Enter your email id" class="input input-bordered w-full max-w-xs" />
+
+                    </div>
+
+
+                    <button onclick="btnName()" class="btn-wide bg-[#1DD100] rounded-[16px] w-full px-5 py-3 mt-6">Next</button>
                     <div class="flex justify-between mt-4 underline">
                     <a href="">Terms and Conditions</a>
                     <a href="">Cancellation Policy</a>
@@ -270,6 +282,7 @@
             </div>
         
         </section>
+
         <!--- success option start -->
         <section id="pop-pup" class="container mx-auto hidden">
             <div class="text-center mx-auto bg-[#F78C9C] py-10 w-[50%]">
@@ -278,9 +291,10 @@
                 <p class="w-1/2 mx-auto py-5">Thank you for Booking Our Bus Seats. 
                     We are working hard to find the best service and deals for you. 
                     Shortly you will find a confirmation in your email.</p>
-                    <button class="btn btn-wide bg-[#27AE60] rounded-3xl">Wide</button>
+                    <button id="wide-pop" class="btn-wide bg-[#27AE60] rounded-3xl px-3 py-3">Continue</button>
             </div>
         </section>
+        
     </main>
    <!--footer section start -->
    <div>
