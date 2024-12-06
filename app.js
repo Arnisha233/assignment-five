@@ -11,14 +11,11 @@ function donate() {
         donateButton[i].addEventListener('click', function(){
             const inputs = inputField[i].value;
             const titles = document.getElementsByClassName('title')[i].innerText;
-            if(isNaN (inputs) || inputs === ""){
+            if(isNaN (inputs) || inputs === "" || parseFloat(inputs) <= 0){
                 alert('please provide a valid number');
             }else {
                 alert('Thank you for your donation');
-            }
-            inputField[i].value = "";
-
-            totalDonated += parseFloat(inputs);
+                totalDonated += parseFloat(inputs);
             updateSumDonationButton();
 
             // my balance minus
@@ -27,6 +24,7 @@ function donate() {
             const minus = balance - inputs;
             myBalance.innerText = minus;
 
+
             // history work
 
             const historyItem = document.createElement('div');
@@ -34,11 +32,16 @@ function donate() {
 
             historyItem.innerHTML = `<p class="text-lg font-semibold">${inputs} Taka is ${titles}</p>
             <p class="text-sm text-gray-500">Date: ${new Date().toLocaleDateString()}</p>
+            <p class="text-sm text-gray-500">Time: ${new Date().toLocaleTimeString()} (Bangladesh Standard Time)</p>
             `;
 
             const historyList = document.getElementById('history-list');
             historyList.appendChild(historyItem, historyList.firstChild);
 
+
+            }
+            inputField[i].value = "";
+            
         });
     }
 }
