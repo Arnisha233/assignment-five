@@ -74,6 +74,4 @@ donationTab.addEventListener('click', function(){
     document.getElementById('history-section').classList.add('hidden');
 })
 
-
-
 donate();
