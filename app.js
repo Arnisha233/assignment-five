@@ -19,7 +19,7 @@ document.getElementById("card").addEventListener("click", function (e) {
   if (e.target.className.includes("call")) {
     const cointCall = document.getElementById("coint");
     const coinParse = Number(cointCall.innerText);
-    if (coinParse > 0) {
+    if (coinParse >= 20) {
       const countCoint = coinParse - 20;
       cointCall.innerText = countCoint;
       const serviceName = e.target.parentNode.parentNode.children[1].innerText;
@@ -44,10 +44,11 @@ document.getElementById("card").addEventListener("click", function (e) {
         .getElementById("clear-btn")
         .addEventListener("click", function () {
           document.createElement("div");
+
           div.innerHTML = "";
         });
     } else {
-      alert("❌ Each call will cut 20 coins. Reduce Coin after each click.");
+      alert("❌ You don't have enough coins. You'll need at least 20 conins");
     }
   }
 });
