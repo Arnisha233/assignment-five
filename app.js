@@ -1,15 +1,3 @@
-// heart button click with loop
-// const heartButton = document.getElementsByClassName("heart-btn");
-
-// for (let btn of heartButton) {
-//   btn.addEventListener("click", function () {
-//     let countBtn = document.getElementById("count-btn");
-//     let parseConvert = parseInt(countBtn.innerText);
-//     let count = parseConvert + 1;
-//     countBtn.innerText = count;
-//   });
-// }
-
 // click btn and copy btn for function
 
 function copyClick(id) {
@@ -22,10 +10,6 @@ function copyClick(id) {
 // heart button click with delegation
 document.getElementById("card").addEventListener("click", function (e) {
   if (e.target.className.includes("heart-btn")) {
-    // let countBtn = document.getElementById("count-btn");
-    // let parseConvert = parseInt(countBtn.innerText);
-    // let count = parseConvert + 1;
-    // countBtn.innerText = count;
     copyClick("count-btn");
   }
 });
@@ -68,24 +52,9 @@ document.getElementById("card").addEventListener("click", function (e) {
   }
 });
 
-// const heartButton = document.getElementsByClassName("call");
-
-// for (let btn of heartButton) {
-//   btn.addEventListener("click", function () {
-//     const serviceName = btn.parentNode.parentNode.childNodes[3].innerText;
-//     // console.log(serviceName);
-//     const serviceNumber = btn.parentNode.parentNode.childNodes[7].innerText;
-//     console.log(serviceNumber);
-//   });
-// }
-
 // click copy button with delegation
 document.getElementById("card").addEventListener("click", function (e) {
   if (e.target.className.includes("copy")) {
-    // let countBtn = document.getElementById("copy-btn");
-    // let parseConvert = parseInt(countBtn.innerText);
-    // let copyCount = parseConvert + 1;
-    // countBtn.innerText = copyCount;
     copyClick("copy-btn");
     const serviceNumber = e.target.parentNode.parentNode.children[3].innerText;
     alert(`Number copied ${serviceNumber}`);
